@@ -45,7 +45,8 @@ def main(csv_path="participants.csv"):
         for nom in noms
     }
     (DATA_DIR / "assignments.json").write_text(
-        json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8"
+        json.dumps(data, ensure_ascii=False, indent=2),
+        encoding="utf-8"
     )
     print("✅ Fichier data/assignments.json créé")
     print("🔐 Mots de passe à distribuer :")
