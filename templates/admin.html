@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8"><title>Admin Secret Santa</title></head>
+<body style="font-family:sans-serif;max-width:800px;margin:2rem auto">
+  <h1>🔧 Modifier les exclusions</h1>
+  <form method="post">
+    <table border="1" cellpadding="8">
+      <tr><th>Nom</th><th>Exclusions (séparés par ;)</th></tr>
+      {% for p in participants %}
+      <tr>
+        <td><input name="name" value="{{ p.name }}" readonly></td>
+        <td><input name="exclusions" value="{{ p.exclusions }}"></td>
+      </tr>
+      {% endfor %}
+    </table>
+    <br>
+    <button type="submit">💾 Enregistrer et régénérer</button>
+  </form>
+</body>
+</html>
