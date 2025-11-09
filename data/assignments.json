@@ -1,0 +1,46 @@
+{
+  "Mamie": {
+    "receiver": "Talia",
+    "password": "V8TF"
+  },
+  "Sophie": {
+    "receiver": "Eden",
+    "password": "XGF0"
+  },
+  "Jonathan": {
+    "receiver": "Tom",
+    "password": "A20Z"
+  },
+  "Laetitia": {
+    "receiver": "Cali",
+    "password": "HQF4"
+  },
+  "CC": {
+    "receiver": "Jonathan",
+    "password": "2OI0"
+  },
+  "Cali": {
+    "receiver": "Laetitia",
+    "password": "LXUE"
+  },
+  "Eden": {
+    "receiver": "Ledzio",
+    "password": "87X2"
+  },
+  "Talia": {
+    "receiver": "Sophie",
+    "password": "OM25"
+  },
+  "Ledzio": {
+    "receiver": "CC",
+    "password": "8GS8"
+  },
+  "Helena": {
+    "receiver": "Mamie",
+    "password": "X15D"
+  },
+  "Tom": {
+    "receiver": "Helena",
+    "password": "BL4V"
+  }
+}

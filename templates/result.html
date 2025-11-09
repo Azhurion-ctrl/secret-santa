@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8"><title>Résultat</title></head>
+<body style="font-family:sans-serif;max-width:600px;margin:2rem auto">
+  {% if error %}
+    <h2>❌ Erreur</h2>
+    <p>{{ error }}</p>
+  {% else %}
+    <h2>🎁 Bonjour {{ giver }}</h2>
+    <p>Tu offres un cadeau à :</p>
+    <h1 style="font-size:2rem">{{ receiver }}</h1>
+    <p style="color:#666">Garde ce secret pour toi 🤫</p>
+  {% endif %}
+</body>
+</html>
