@@ -8,7 +8,7 @@
   <h1>🎅 Secret Santa</h1>
   <form method="post">
     <label>Prénom :</label><br>
-    <input name="name" id="prenom" required><br><br>
+    <input name="name" id="prenom" value="{{ user }}" required readonly><br><br>
 
     <label>Code secret (4 caractères) :</label><br>
     <input name="password" required maxlength="4"><br><br>
@@ -17,13 +17,5 @@
   </form>
 
   <p style="color:#666">Ne partage pas ton code avec les autres 😉</p>
-
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const user = params.get("user");
-    if (user) {
-      document.getElementById("prenom").value = user;
-    }
-  </script>
 </body>
 </html>

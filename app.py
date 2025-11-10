@@ -1,22 +1,22 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request
 import json
 
 app = Flask(__name__)
 
-# 🔐 Chargement des données d'assignation
+# 🔐 Chargement des affectations
 with open("data/assignments.json", encoding="utf-8") as f:
     ASSIGNMENTS = json.load(f)
 
 @app.route("/form.html")
 def form():
-    return render_template("form.html")
+    user = request.args.get("user")  # récupère ?user=Alice
+    return render_template("form.html", user=user)
 
 @app.route("/", methods=["POST"])
 def result():
     name = request.form.get("name")
     password = request.form.get("password")
 
-    # 🔍 Vérification du mot de passe
     if name in ASSIGNMENTS and ASSIGNMENTS[name]["password"] == password:
         target = ASSIGNMENTS[name]["target"]
         return f"""
