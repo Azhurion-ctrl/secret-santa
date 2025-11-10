@@ -1,46 +1,54 @@
 {
   "Mamie": {
-    "password": "FOKS",
-    "target": "Sophie"
+    "password": "IHQD",
+    "target": "Jonathan"
   },
   "Sophie": {
-    "password": "AKII",
+    "password": "CFZL",
     "target": "Eden"
   },
   "Jonathan": {
-    "password": "KDLY",
-    "target": "Cali"
+    "password": "UCWE",
+    "target": "Talia"
   },
   "Laetitia": {
-    "password": "USVM",
-    "target": "Jonathan"
-  },
-  "CC": {
-    "password": "SAKW",
+    "password": "NYKB",
     "target": "Helena"
   },
+  "CC": {
+    "password": "YYME",
+    "target": "Sophie"
+  },
   "Cali": {
-    "password": "VBBI",
+    "password": "RILO",
     "target": "Ledzio"
   },
   "Eden": {
-    "password": "ZJXX",
+    "password": "LVSG",
     "target": "Tom"
   },
   "Talia": {
-    "password": "XONT",
-    "target": "Mamie"
+    "password": "QOPY",
+    "target": "Julie"
   },
   "Ledzio": {
-    "password": "TNLQ",
+    "password": "WFLB",
     "target": "Laetitia"
   },
   "Helena": {
-    "password": "IZWH",
-    "target": "CC"
+    "password": "KSLO",
+    "target": "Cali"
   },
   "Tom": {
-    "password": "HJYI",
-    "target": "Talia"
+    "password": "SZOC",
+    "target": "Chris"
+  },
+  "Chris": {
+    "password": "AQTC",
+    "target": "Mamie"
+  },
+  "Julie": {
+    "password": "BRPS",
+    "target": "CC"
   }
 }
