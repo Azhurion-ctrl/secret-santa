@@ -1,46 +1,46 @@
 {
   "Mamie": {
-    "receiver": "Jonathan",
-    "password": "EWFB"
+    "password": "DTIW",
+    "target": "Tom"
   },
   "Sophie": {
-    "receiver": "Mamie",
-    "password": "HIVE"
+    "password": "TRHB",
+    "target": "Eden"
   },
   "Jonathan": {
-    "receiver": "Cali",
-    "password": "B485"
+    "password": "NKOU",
+    "target": "Mamie"
   },
   "Laetitia": {
-    "receiver": "Helena",
-    "password": "ZRFN"
+    "password": "OPQA",
+    "target": "Helena"
   },
   "CC": {
-    "receiver": "Tom",
-    "password": "HBFD"
+    "password": "RNVA",
+    "target": "Cali"
   },
   "Cali": {
-    "receiver": "Ledzio",
-    "password": "HPLZ"
+    "password": "QFSM",
+    "target": "Talia"
   },
   "Eden": {
-    "receiver": "CC",
-    "password": "VRPT"
+    "password": "XKTD",
+    "target": "Laetitia"
   },
   "Talia": {
-    "receiver": "Sophie",
-    "password": "6TJQ"
+    "password": "SDQI",
+    "target": "Jonathan"
   },
   "Ledzio": {
-    "receiver": "Talia",
-    "password": "6QTV"
+    "password": "LSYW",
+    "target": "CC"
   },
   "Helena": {
-    "receiver": "Laetitia",
-    "password": "BEJP"
+    "password": "EJNL",
+    "target": "Sophie"
   },
   "Tom": {
-    "receiver": "Eden",
-    "password": "PPWA"
+    "password": "TFPT",
+    "target": "Ledzio"
   }
 }

@@ -1,15 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-<head><meta charset="utf-8"><title>Résultat</title></head>
-<body style="font-family:sans-serif;max-width:600px;margin:2rem auto">
-  {% if error %}
-    <h2>❌ Erreur</h2>
-    <p>{{ error }}</p>
-  {% else %}
-    <h2>🎁 Bonjour {{ giver }}</h2>
-    <p>Tu offres un cadeau à :</p>
-    <h1 style="font-size:2rem">{{ receiver }}</h1>
-    <p style="color:#666">Garde ce secret pour toi 🤫</p>
-  {% endif %}
+<head>
+  <meta charset="UTF-8">
+  <title>🎁 Secret Santa</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #f0f8ff, #ffe4e1);
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 50px;
+      color: #333;
+      position: relative;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #b22222;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.5em;
+      margin-top: 10px;
+    }
+
+    .target {
+      font-size: 2em;
+      font-weight: bold;
+      color: #006400;
+      background: #fff8dc;
+      padding: 10px 20px;
+      border-radius: 12px;
+      display: inline-block;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .snowflake {
+      position: absolute;
+      top: -10px;
+      font-size: 1.2em;
+      color: #add8e6;
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      0% { top: -10px; opacity: 1; }
+      100% { top: 100vh; opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎄 Bonjour {{ name }} !</h1>
+  <p>Ta cible Secret Santa est :</p>
+  <div class="target">{{ target }}</div>
+
+  <!-- Flocons animés -->
+  {% for i in range(30) %}
+    <div class="snowflake" style="
+      left: {{ loop.index0 * 3 }}%;
+      animation-duration: {{ 5 + loop.index0 % 5 }}s;
+      animation-delay: {{ loop.index0 * 0.3 }}s;
+    ">❄️</div>
+  {% endfor %}
 </body>
 </html>
