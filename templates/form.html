@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>🎄 Secret Santa 🎁</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Cinzel', serif;
       background: linear-gradient(to bottom, #fffaf0, #ffe4e1);
       max-width: 600px;
       margin: 2rem auto;
@@ -22,16 +23,22 @@
       margin-bottom: 2rem;
     }
     label {
-      font-weight: bold;
-      color: #4b0082;
+      font-family: 'Great Vibes', cursive;
+      font-size: 22px;
+      color: #b08d57;
+      display: block;
+      margin-bottom: 0.5rem;
     }
     input {
       width: 100%;
       padding: 0.5rem;
-      margin-top: 0.3rem;
       margin-bottom: 1rem;
-      border: 1px solid #ccc;
+      border: 2px solid #b08d57;
       border-radius: 6px;
+      font-family: 'Great Vibes', cursive;
+      font-size: 20px;
+      color: #b08d57;
+      background: rgba(255,255,255,0.9);
     }
     button {
       background-color: #b22222;
@@ -41,6 +48,9 @@
       border-radius: 6px;
       font-size: 1rem;
       cursor: pointer;
+      width: 100%;
+      transition: 0.3s;
+      font-family: 'Cinzel', serif;
     }
     button:hover {
       background-color: #8b0000;
@@ -50,6 +60,7 @@
       font-size: 0.9rem;
       color: #666;
       margin-top: 2rem;
+      font-family: 'Cinzel', serif;
     }
 
     /* 🎀 Guirlande animée */
@@ -78,12 +89,27 @@
     .bulb:nth-child(5) { background: violet; animation-delay: 1.2s; }
 
     @keyframes blink {
-      0%, 100% { opacity: 1; }
       50% { opacity: 0.3; }
+    }
+
+    /* ❄️ Flocons de neige */
+    .snowflake {
+      position: fixed;
+      top: -10px;
+      color: white;
+      font-size: 1.2rem;
+      opacity: 0.8;
+      animation: fall linear infinite;
+      pointer-events: none;
+    }
+    @keyframes fall {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(100vh); }
     }
   </style>
 </head>
 <body>
+  <!-- 🎀 Guirlande -->
   <div class="guirlande">
     <div class="bulb"></div>
     <div class="bulb"></div>
@@ -92,65 +118,21 @@
     <div class="bulb"></div>
   </div>
 
-  <h1>🎅 Bienvenue au Secret Santa ! 🎁</h1>
+  <!-- ❄️ Flocons -->
+  <div class="snowflake" style="left: 10%; animation-duration: 8s;">❄</div>
+  <div class="snowflake" style="left: 30%; animation-duration: 12s;">❄</div>
+  <div class="snowflake" style="left: 50%; animation-duration: 10s;">❄</div>
+  <div class="snowflake" style="left: 70%; animation-duration: 14s;">❄</div>
+  <div class="snowflake" style="left: 90%; animation-duration: 9s;">❄</div>
 
-  <form method="post" action="/">
-    <label>Prénom :</label><br>
-    <input name="name" id="prenom" value="{{ user }}" required readonly>
-
-    <label>Code secret (4 caractères) :</label><br>
-    <input name="password" required maxlength="4">
-
-    <button type="submit">🎁 Voir ma cible</button>
+  <h1>✨ Quête Secret Santa ✨</h1>
+  <form method="POST" action="/check_code" class="hp-form">
+    <label for="code">Entre ton code secret :</label>
+    <input type="text" id="code" name="code" required>
+    <button type="submit">Révéler ma cible 🔮</button>
   </form>
-
   <div class="footer">
-    🤫 Ne partage pas ton code avec les autres.<br>
-    🎄 Joyeux Noël et que la magie opère !
+    Ne divulguez pas votre code à des Moldus.
   </div>
-
-  <!-- ❄️ Flocons de neige -->
-  <canvas id="snow" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:999;"></canvas>
-  <script>
-    const canvas = document.getElementById("snow");
-    const ctx = canvas.getContext("2d");
-    let width = canvas.width = window.innerWidth;
-    let height = canvas.height = window.innerHeight;
-
-    let flakes = Array.from({length: 100}, () => ({
-      x: Math.random() * width,
-      y: Math.random() * height,
-      r: Math.random() * 4 + 1,
-      d: Math.random() * 1 + 0.5
-    }));
-
-    function drawFlakes() {
-      ctx.clearRect(0, 0, width, height);
-      ctx.fillStyle = "white";
-      ctx.beginPath();
-      for (let f of flakes) {
-        ctx.moveTo(f.x, f.y);
-        ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2, true);
-      }
-      ctx.fill();
-      moveFlakes();
-    }
-
-    function moveFlakes() {
-      for (let f of flakes) {
-        f.y += f.d;
-        if (f.y > height) {
-          f.y = 0;
-          f.x = Math.random() * width;
-        }
-      }
-    }
-
-    setInterval(drawFlakes, 33);
-    window.addEventListener("resize", () => {
-      width = canvas.width = window.innerWidth;
-      height = canvas.height = window.innerHeight;
-    });
-  </script>
 </body>
 </html>
