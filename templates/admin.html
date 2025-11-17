@@ -1,19 +1,46 @@
 <!doctype html>
 <html lang="fr">
-<head><meta charset="utf-8"><title>Admin Secret Santa</title></head>
-<body style="font-family:sans-serif;max-width:800px;margin:2rem auto">
+<head>
+  <meta charset="utf-8">
+  <title>Admin Secret Santa</title>
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: 2rem auto; }
+    h1 { color: #2c3e50; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 8px; }
+    th { background: #f4f4f4; }
+    input[type="text"] { width: 95%; }
+    button { margin-top: 15px; padding: 10px 15px; background: #2c3e50; color: white; border: none; cursor: pointer; }
+    button:hover { background: #34495e; }
+  </style>
+  <script>
+    function addRow() {
+      const table = document.getElementById("participants-table");
+      const row = table.insertRow(-1);
+      const cell1 = row.insertCell(0);
+      const cell2 = row.insertCell(1);
+      cell1.innerHTML = '<input type="text" name="name" value="">';
+      cell2.innerHTML = '<input type="text" name="exclusions" value="">';
+    }
+  </script>
+</head>
+<body>
   <h1>🔧 Modifier les exclusions</h1>
   <form method="post">
-    <table border="1" cellpadding="8">
-      <tr><th>Nom</th><th>Exclusions (séparés par ;)</th></tr>
+    <table id="participants-table">
+      <tr>
+        <th>Nom</th>
+        <th>Exclusions (séparés par ;)</th>
+      </tr>
       {% for p in participants %}
       <tr>
-        <td><input name="name" value="{{ p.name }}" readonly></td>
-        <td><input name="exclusions" value="{{ p.exclusions }}"></td>
+        <td><input type="text" name="name" value="{{ p.name }}"></td>
+        <td><input type="text" name="exclusions" value="{{ p.exclusions }}"></td>
       </tr>
       {% endfor %}
     </table>
     <br>
+    <button type="button" onclick="addRow()">➕ Ajouter un participant</button>
     <button type="submit">💾 Enregistrer et régénérer</button>
   </form>
 </body>
