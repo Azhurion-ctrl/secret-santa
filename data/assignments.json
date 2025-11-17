@@ -1,70 +1,66 @@
 {
   "Laëtitia": {
-    "password": "MTEI",
+    "password": "LSQQ",
     "target": "Rozenn"
   },
   "Morgan": {
-    "password": "ORDG",
-    "target": "Marion Vi"
-  },
-  "Marion Va": {
-    "password": "YOCY",
-    "target": "Samia"
-  },
-  "Marion Vi": {
-    "password": "ZHUX",
-    "target": "Fatima"
-  },
-  "Léa": {
-    "password": "DKEB",
-    "target": "Laura"
-  },
-  "Rozenn": {
-    "password": "ZDDX",
+    "password": "UDVF",
     "target": "Léa"
   },
-  "Nadège": {
-    "password": "FOVS",
+  "Marion Va": {
+    "password": "NISE",
+    "target": "Laëtitia"
+  },
+  "Marion Vi": {
+    "password": "QRPX",
     "target": "Nico du ghetto"
   },
+  "Léa": {
+    "password": "MMET",
+    "target": "Marion Vi"
+  },
+  "Rozenn": {
+    "password": "YRWP",
+    "target": "Laura"
+  },
+  "Nadège": {
+    "password": "MYQI",
+    "target": "Fatima"
+  },
   "Audrey": {
-    "password": "FSIE",
+    "password": "EDMR",
     "target": "Nadège"
   },
   "Manon": {
-    "password": "OQWM",
-    "target": "Nicobleu"
-  },
-  "Nicobleu": {
-    "password": "ZGXY",
-    "target": "Morgan"
-  },
-  "Laura": {
-    "password": "KDDN",
+    "password": "WTUY",
     "target": "Marion Va"
   },
-  "Valérie": {
-    "password": "SPCG",
-    "target": "Yseut"
-  },
-  "Nico du ghetto": {
-    "password": "DVFQ",
-    "target": "Charlotte"
-  },
-  "Samia": {
-    "password": "BECV",
-    "target": "Laëtitia"
-  },
-  "Yseut": {
-    "password": "PRBL",
-    "target": "Valérie"
-  },
-  "Fatima": {
-    "password": "JPWL",
+  "Nicobleu": {
+    "password": "VQRK",
     "target": "Manon"
   },
-  "Charlotte": {
-    "password": "IEKE",
+  "Laura": {
+    "password": "WBOK",
+    "target": "Samia"
+  },
+  "Valérie instit": {
+    "password": "SHAV",
+    "target": "Morgan"
+  },
+  "Nico du ghetto": {
+    "password": "GMHP",
     "target": "Audrey"
+  },
+  "Samia": {
+    "password": "BNJQ",
+    "target": "Nicobleu"
+  },
+  "Yseut": {
+    "password": "QHPM",
+    "target": "Valérie instit"
+  },
+  "Fatima": {
+    "password": "TCFB",
+    "target": "Yseut"
   }
 }
