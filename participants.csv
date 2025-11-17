@@ -1,14 +1,18 @@
-name,exclude
-Mamie,None
-Sophie,"Jonathan,Ledzio,Tom,Helena"
-Jonathan,"Sophie,Ledzio,Tom,Helena"
-Laetitia,"CC,Eden,Talia,Cali"
-CC,"Laetitia,Eden,Talia,Cali"
-Cali,"Eden,Talia,CC,Laetitia"
-Eden,"Talia,Cali,CC,Laetitia"
-Talia,"Eden,Cali,CC,Laetitia"
-Ledzio,"Tom,Helena,Jonathan,Sophie"
-Helena,"Jonathan,Sophie,Tom,Ledzio"
-Tom,"Helena,Ledzio,Jonathan,Sophie"
-Chris,"Julie"
-Julie,"Chris"
+name,exclusions
+Laëtitia,Morgan
+Morgan,Laëtitia
+Marion Va,Marion Vi
+Marion Vi,Marion Va
+Léa
+Rozenn
+Nadège
+Audrey
+Manon
+Nicobleu
+Laura
+Valérie
+Nico du ghetto
+Samia
+Yseut
+Fatima
+Charlotte
