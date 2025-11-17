@@ -9,7 +9,7 @@ PARTICIPANTS_PATH = Path("participants.csv")
 ASSIGNMENTS_PATH = Path("data/assignments.json")
 QR_DIR = Path("cartes")
 QR_DIR.mkdir(exist_ok=True)
-BASE_URL = "https://secret-santa-y4uc.onrender.com/form.html?user="
+BASE_URL = "https://secret-santa-1-zf2s.onrender.com/form.html?user="
 
 # 📄 Lecture des participants avec exclusions
 def read_participants(path):
