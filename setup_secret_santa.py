@@ -6,22 +6,22 @@ import qrcode
 
 # 📁 Chemins
 PARTICIPANTS_PATH = Path("participants.csv")
-ASSIGNMENTS_PATH = Path("data/assignments.json")
+ASSIGNMENTS_PATH = Path("data/assignments2.json")
 QR_DIR = Path("cartes")
 QR_DIR.mkdir(exist_ok=True)
 BASE_URL = "https://secret-santa-1-zf2s.onrender.com/form.html?user="
 
 # 📄 Lecture des participants avec exclusions
 def read_participants(path):
-    with open(path, encoding="utf-8") as f:
-        return [
-            {
+    with path.open(encoding="utf-8") as f:
+        reader = csv.DictReader(f, delimiter=",")
+        participants = []
+        for row in reader:
+            participants.append({
                 "name": row["name"].strip(),
-                "exclude": [e.strip() for e in row["exclude"].split(",") if e.strip()]
-            }
-            for row in csv.DictReader(f, delimiter=",")
-            if row["name"].strip()
-        ]
+                "exclude": [e.strip() for e in (row["exclusions"] or "").replace(";", ",").split(",") if e.strip()]
+            })
+        return participants
 
 # ✅ Validation de la liste
 def validate(participants):

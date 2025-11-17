@@ -1,0 +1,54 @@
+{
+  "Mamie": {
+    "password": "ARVQ",
+    "target": "Sophie"
+  },
+  "Sophie": {
+    "password": "EYOP",
+    "target": "Chris"
+  },
+  "Jonathan": {
+    "password": "OBAU",
+    "target": "Eden"
+  },
+  "Laetitia": {
+    "password": "MVJB",
+    "target": "Ledzio"
+  },
+  "CC": {
+    "password": "EPEK",
+    "target": "Tom"
+  },
+  "Cali": {
+    "password": "VKCP",
+    "target": "Mamie"
+  },
+  "Eden": {
+    "password": "SQPO",
+    "target": "Jonathan"
+  },
+  "Talia": {
+    "password": "TYPW",
+    "target": "Julie"
+  },
+  "Ledzio": {
+    "password": "PBSD",
+    "target": "Talia"
+  },
+  "Helena": {
+    "password": "LFJB",
+    "target": "Cali"
+  },
+  "Tom": {
+    "password": "UWUL",
+    "target": "CC"
+  },
+  "Chris": {
+    "password": "XZQD",
+    "target": "Laetitia"
+  },
+  "Julie": {
+    "password": "BHES",
+    "target": "Helena"
+  }
+}

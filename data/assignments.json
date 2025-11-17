@@ -1,54 +1,70 @@
 {
-  "Mamie": {
-    "password": "LOUY",
-    "target": "Chris"
+  "Laëtitia": {
+    "password": "MTEI",
+    "target": "Rozenn"
   },
-  "Sophie": {
-    "password": "IDDQ",
-    "target": "Eden"
+  "Morgan": {
+    "password": "ORDG",
+    "target": "Marion Vi"
   },
-  "Jonathan": {
-    "password": "XYNI",
-    "target": "Laetitia"
+  "Marion Va": {
+    "password": "YOCY",
+    "target": "Samia"
   },
-  "Laetitia": {
-    "password": "PLNO",
-    "target": "Helena"
+  "Marion Vi": {
+    "password": "ZHUX",
+    "target": "Fatima"
   },
-  "CC": {
-    "password": "AKEO",
-    "target": "Tom"
+  "Léa": {
+    "password": "DKEB",
+    "target": "Laura"
   },
-  "Cali": {
-    "password": "LLNS",
-    "target": "Julie"
+  "Rozenn": {
+    "password": "ZDDX",
+    "target": "Léa"
   },
-  "Eden": {
-    "password": "HIDN",
-    "target": "Sophie"
+  "Nadège": {
+    "password": "FOVS",
+    "target": "Nico du ghetto"
   },
-  "Talia": {
-    "password": "CLDR",
-    "target": "Ledzio"
+  "Audrey": {
+    "password": "FSIE",
+    "target": "Nadège"
   },
-  "Ledzio": {
-    "password": "JHGZ",
-    "target": "Talia"
+  "Manon": {
+    "password": "OQWM",
+    "target": "Nicobleu"
   },
-  "Helena": {
-    "password": "CGHI",
-    "target": "CC"
+  "Nicobleu": {
+    "password": "ZGXY",
+    "target": "Morgan"
   },
-  "Tom": {
-    "password": "PJLH",
-    "target": "Cali"
+  "Laura": {
+    "password": "KDDN",
+    "target": "Marion Va"
   },
-  "Chris": {
-    "password": "MTQF",
-    "target": "Jonathan"
+  "Valérie": {
+    "password": "SPCG",
+    "target": "Yseut"
   },
-  "Julie": {
-    "password": "FIAY",
-    "target": "Mamie"
+  "Nico du ghetto": {
+    "password": "DVFQ",
+    "target": "Charlotte"
+  },
+  "Samia": {
+    "password": "BECV",
+    "target": "Laëtitia"
+  },
+  "Yseut": {
+    "password": "PRBL",
+    "target": "Valérie"
+  },
+  "Fatima": {
+    "password": "JPWL",
+    "target": "Manon"
+  },
+  "Charlotte": {
+    "password": "IEKE",
+    "target": "Audrey"
   }
 }
