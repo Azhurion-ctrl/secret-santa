@@ -14,6 +14,20 @@ def form():
     user = request.args.get("user")
     return render_template("form.html", user=user)
 
+# Route admin
+@app.route("/admin", methods=["GET", "POST"])
+def admin():
+    if request.method == "POST":
+        new_participants = request.form.get("participants")
+        if new_participants:
+            participants_list = [p.strip() for p in new_participants.split(",")]
+            ASSIGNMENTS["participants"] = participants_list
+            with open("data/assignments.json", "w", encoding="utf-8") as f:
+                json.dump(ASSIGNMENTS, f, ensure_ascii=False, indent=2)
+        return redirect("/admin")
+
+    return render_template("admin.html", participants=ASSIGNMENTS.get("participants", []))
+
 # Route racine : accepte GET et POST
 @app.route("/", methods=["GET", "POST"])
 def result():
