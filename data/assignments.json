@@ -1,54 +1,54 @@
 {
   "Mamie": {
-    "password": "QWAW",
-    "target": "Cali"
-  },
-  "Sophie": {
-    "password": "HDIZ",
-    "target": "Julie"
-  },
-  "Jonathan": {
-    "password": "FDSK",
-    "target": "Mamie"
-  },
-  "Laetitia": {
-    "password": "HSXD",
-    "target": "Jonathan"
-  },
-  "CC": {
-    "password": "VIKF",
-    "target": "Ledzio"
-  },
-  "Cali": {
-    "password": "BCIR",
-    "target": "Helena"
-  },
-  "Eden": {
-    "password": "SJIE",
+    "password": "LOUY",
     "target": "Chris"
   },
-  "Talia": {
-    "password": "VZNE",
-    "target": "Sophie"
-  },
-  "Ledzio": {
-    "password": "VNZF",
-    "target": "Laetitia"
-  },
-  "Helena": {
-    "password": "WOOF",
+  "Sophie": {
+    "password": "IDDQ",
     "target": "Eden"
   },
-  "Tom": {
-    "password": "BFPU",
-    "target": "CC"
+  "Jonathan": {
+    "password": "XYNI",
+    "target": "Laetitia"
   },
-  "Chris": {
-    "password": "ESGB",
+  "Laetitia": {
+    "password": "PLNO",
+    "target": "Helena"
+  },
+  "CC": {
+    "password": "AKEO",
+    "target": "Tom"
+  },
+  "Cali": {
+    "password": "LLNS",
+    "target": "Julie"
+  },
+  "Eden": {
+    "password": "HIDN",
+    "target": "Sophie"
+  },
+  "Talia": {
+    "password": "CLDR",
+    "target": "Ledzio"
+  },
+  "Ledzio": {
+    "password": "JHGZ",
     "target": "Talia"
   },
+  "Helena": {
+    "password": "CGHI",
+    "target": "CC"
+  },
+  "Tom": {
+    "password": "PJLH",
+    "target": "Cali"
+  },
+  "Chris": {
+    "password": "MTQF",
+    "target": "Jonathan"
+  },
   "Julie": {
-    "password": "CYGS",
-    "target": "Tom"
+    "password": "FIAY",
+    "target": "Mamie"
   }
 }
