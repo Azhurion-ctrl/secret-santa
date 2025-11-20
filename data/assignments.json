@@ -1,7 +1,7 @@
 {
   "Laëtitia": {
     "password": "DHFR",
-    "target": "Nicobleu"
+    "target": "Charlotte"
   },
   "Morgan": {
     "password": "AYRB",
@@ -62,5 +62,9 @@
   "Fatima": {
     "password": "NQCB",
     "target": "Yseut"
+  },
+  "Charlotte" : {
+    "password" : "SSDI",
+    "target" : "Nicobleu"
   }
 }
